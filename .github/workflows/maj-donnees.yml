@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "rtn-bot"
           git config user.email "rtn-bot@users.noreply.github.com"
-          git add data.json assets/photos assets/logos 2>/dev/null || true
+          git add -A
           if git diff --cached --quiet; then echo "Aucun changement"; exit 0; fi
           git commit -m "Mise à jour automatique des données ($(date +'%Y-%m-%d'))"
           git push

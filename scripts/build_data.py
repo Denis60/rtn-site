@@ -206,6 +206,9 @@ def main():
     }
     with open(a.out, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=1)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from render import render_all
+    render_all(data, ROOT)
     print(f"data.json : {data['stats']} ; prochaine = {data['prochaine']['date'] if data['prochaine'] else '—'}")
 
 
