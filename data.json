@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T09:52+01:00",
+ "generatedAt": "2026-11-23T09:55+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
@@ -155,12 +155,12 @@
     {
      "nom": "Manacosi",
      "logo": "assets/logos/recVfyjjHgdzqrLMO.png",
-     "site": ""
+     "site": "https://manacosi.com/"
     },
     {
      "nom": "PaksIA",
      "logo": "assets/logos/recy3EMJvrOjHTWDP.png",
-     "site": ""
+     "site": "https://www.paksia.ai/"
     }
    ],
    "interventions": [
@@ -527,7 +527,7 @@
     {
      "nom": "Manacosi",
      "logo": "assets/logos/recnEjEWqDbhYSdvu.png",
-     "site": ""
+     "site": "https://manacosi.com/"
     }
    ],
    "interventions": [
