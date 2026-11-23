@@ -213,7 +213,7 @@ section{padding:clamp(64px,9vw,110px) clamp(16px,4vw,40px)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
 /* --- qui vient --- */
-.who{background:var(--creme)}
+.audience{background:var(--creme)}
 .who-grid{max-width:var(--max);margin:0 auto;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .who-grid li{background:#fff;border-radius:var(--radius);padding:24px;border-top:6px solid var(--jaune);display:flex;flex-direction:column;gap:8px}
 .who-grid b{font-family:var(--head);font-weight:800;font-size:19px;color:var(--bordeaux);line-height:1.2}
@@ -257,3 +257,275 @@ section{padding:clamp(64px,9vw,110px) clamp(16px,4vw,40px)}
 .sp-nav a{color:var(--bordeaux);text-decoration:none}
 @media (max-width:980px){.who-grid{grid-template-columns:1fr 1fr}.sp-grid{grid-template-columns:1fr}}
 @media (max-width:600px){.who-grid{grid-template-columns:1fr}}
+
+/* =====================================================================
+   THÈME « Terrain » v2 — aligné sur le logo et les invitations e-mail
+   Orange RDV · Bleu épingle · Marine · Sable · Ciel — titres Roboto Slab
+   ===================================================================== */
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/roboto-slab-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/roboto-slab-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/roboto-slab-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/roboto-slab-latin-900-normal.woff2) format('woff2')}
+:root{
+  --orange:#F2651A; --orange-vif:#FF7A00; --orange-ombre:#C44E0E;
+  --bleu:#0062F2; --bleu-fonce:#0261A8;
+  --marine:#1F2D3D; --marine-2:#16212D; --ardoise:#4F6E86;
+  --sable:#F9F3EE; --ciel:#F3F8FA; --ciel-2:#D7EBF5;
+  /* anciennes variables redirigées */
+  --bordeaux:var(--bleu-fonce); --bordeaux-deep:var(--marine); --bordeaux-ink:var(--marine);
+  --jaune:var(--orange); --creme:#FFFEFC; --creme-2:#E6EEF2; --encre:var(--marine); --gris:#5B6B78;
+  --head:"Roboto Slab",Georgia,serif;
+}
+body{background:#FFFEFC;color:var(--marine)}
+h2{font-weight:800}
+/* barre haute claire avec le logo */
+.topbar{background:rgba(255,254,252,.94);color:var(--marine);border-bottom:1px solid #EDE6DF}
+.brand-logo{height:44px;width:auto;display:block}
+.nav a{color:var(--marine)}
+.nav a:hover{color:var(--orange)}
+/* boutons */
+.btn-yellow{background:var(--orange-vif);color:var(--marine);box-shadow:0 6px 0 var(--orange-ombre)}
+.btn-yellow:hover{box-shadow:0 8px 0 var(--orange-ombre)}
+.btn-sm{box-shadow:0 4px 0 var(--orange-ombre)}
+.btn-ghost{color:var(--marine);box-shadow:inset 0 0 0 2px var(--marine)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--bleu)}
+/* hero clair, courbes de niveau bleutées, pixels du logo */
+.hero{background:var(--sable);color:var(--marine)}
+.hero::before{opacity:.32;filter:invert(32%) sepia(23%) saturate(600%) hue-rotate(165deg)}
+.hero::after{background:radial-gradient(closest-side,rgba(255,122,0,.16),transparent)}
+.kicker{background:var(--orange-vif);color:var(--marine)}
+.kicker-dot{background:var(--marine);box-shadow:0 0 0 0 rgba(31,45,61,.5)}
+.h1-tag{color:var(--ardoise);opacity:1}
+.hero-date{color:var(--marine)}
+.hero-date .yr{color:var(--orange)}
+.hero-meta{opacity:1}
+.talk{background:var(--ciel);border:1px solid var(--bleu-fonce);box-shadow:none}
+.talk-n{color:var(--orange)}
+.talk .who{border-top-color:var(--ciel-2)}
+.badge{background:var(--orange-vif);color:var(--marine)}
+.programme-tbd{background:var(--ciel);border-color:var(--bleu-fonce);color:var(--marine)}
+.sponsor-slot .lbl{color:var(--ardoise);opacity:1}
+.logo-chip{border:1px solid #E6EEF2}
+.hero-place a{color:var(--bleu-fonce)}
+.stripes{background:none;clip-path:none;width:120px;height:120px;top:30px;opacity:1;
+  background-image:linear-gradient(var(--bleu),var(--bleu)),linear-gradient(var(--bleu),var(--bleu)),linear-gradient(var(--bleu),var(--bleu));
+  background-size:26px 26px,18px 18px,14px 14px;background-repeat:no-repeat;background-position:86px 0,54px 32px,90px 52px}
+/* chiffres */
+.stats{background:var(--marine)}
+.stat-n{color:var(--orange-vif)}
+/* sections */
+.eyebrow{color:var(--bleu-fonce)}
+.eyebrow::before{background:var(--orange)}
+.lead{color:#3B3F44}
+.concept,.audience,.faq{background:#FFFEFC}
+.history{background:var(--sable)}
+.principles{background:#E6EEF2}
+.pr{background:#fff}
+.pr:hover{background:var(--ciel)}
+.pr-n{background:var(--orange-vif);color:var(--marine)}
+.pr h3{color:var(--marine)}
+.timeline::before{background:repeating-linear-gradient(90deg,var(--ardoise) 0 14px,transparent 14px 22px)}
+.timeline li::before{background:var(--orange-vif);border-color:var(--marine)}
+.timeline b{color:var(--marine)}
+.who-grid li{background:var(--ciel);border-top-color:var(--orange)}
+.who-grid b{color:var(--marine)}
+.chip{border-color:var(--orange);color:var(--marine)}
+.ev-date .d{color:var(--orange)}
+.ev-talks li{border-left-color:var(--bleu)}
+.ev-link,.ev-talks a.sup{border-bottom-color:var(--orange);color:var(--bleu-fonce)}
+.qa summary::after{color:var(--orange)}
+/* rejoindre : section sombre */
+.join{background:var(--marine)}
+.join::before{opacity:.06}
+.jc{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)}
+.jc h3{color:var(--orange-vif)}
+.eyebrow.light{color:var(--orange-vif)}
+.eyebrow.light::before{background:var(--orange-vif)}
+.link-arrow::after{color:var(--orange-vif)}
+.join .wall .logo-chip{border:0}
+.logo-chip.txt{color:var(--marine)}
+a.logo-chip:hover{box-shadow:0 0 0 3px var(--orange-vif)}
+/* pied de page clair, avec logo */
+.footer{background:var(--sable);color:var(--marine);border-top:1px solid #EDE6DF}
+.footer-links a:hover{color:var(--orange)}
+.footer .brand-logo{height:36px}
+/* pages soirée */
+.sp-head h1{color:var(--marine)}
+.sp-talks li{border-left-color:var(--bleu);background:var(--ciel)}
+.crumbs a{color:var(--bleu-fonce)}
+.sp-nav a{color:var(--bleu-fonce)}
+.search input:focus{border-color:var(--bleu)}
+.more{border-color:var(--marine);color:var(--marine)}
+
+/* =====================================================================
+   ACCESSIBILITÉ (malvoyants) + fond aplat crème, sans courbes de niveau
+   Contrastes visés : WCAG AA partout, AAA pour le texte courant.
+   ===================================================================== */
+:root{
+  --fond:#FDF8F2;            /* aplat crème unique */
+  --texte:#1F2D3D;           /* marine : 13:1 sur le fond */
+  --texte-2:#3A4754;         /* texte secondaire : > 9:1 */
+  --orange-texte:#B83E05;    /* orange pour textes : > 5:1 */
+  --bleu-fonce:#024F8A;      /* liens : > 8:1 */
+  --gris:#3A4754;
+  --ardoise:#3A4754;
+}
+html{font-size:112.5%}                     /* base 18 px */
+body{background:var(--fond);color:var(--texte);font-size:1rem;line-height:1.65}
+/* aucune texture : aplat crème partout */
+.hero::before,.hero::after,.join::before{display:none!important}
+.hero,.concept,.audience,.history,.faq,.join,.footer{background:var(--fond)!important}
+.topbar{background:var(--fond);border-bottom:2px solid #E7DED3}
+/* lien d'évitement + focus très visible */
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:var(--texte);color:#fff;padding:12px 18px;border-radius:8px;font-weight:700}
+.skip:focus{left:12px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:4px solid var(--bleu);outline-offset:3px;border-radius:6px}
+/* liens soulignés dans le texte */
+.hero-place a,.lead a,.qa a,.legal a,.ev-talks a.sup,.sp-talks a.sup,a.recap{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+/* textes plus grands et plus foncés */
+.nav{font-size:1rem;gap:24px}
+.nav a{opacity:1;font-weight:500}
+.eyebrow{font-size:.85rem;color:var(--bleu-fonce)}
+.eyebrow.light{color:var(--orange-texte)}
+.eyebrow.light::before{background:var(--orange)}
+.kicker{font-size:.8rem}
+.kicker-dot{animation:none}
+.h1-tag{color:var(--texte-2);font-size:clamp(17px,1.7vw,21px)}
+.hero-date .yr,.ev-date .d,.talk-n{color:var(--orange-texte)}
+.hero-meta,.lead,.pr p,.who-grid span,.qa p,.jc p,.join p{color:var(--texte)}
+.lead{font-size:1.15rem}
+.talk .who{font-size:1rem}
+.talk .who span,.ev-talks .w,.sp-talks .w,.ev-date .ed{color:var(--texte-2)}
+.ev-talks .s{font-size:1.05rem}
+.ev-talks .w,.ev-date .ed,.ev-date .where,.ev-link,.ev-side .spons,.ev-side a.recap,.hero-place,.stat-l,.timeline span,.who-grid span,.jc p,.sp-addr,.crumbs{font-size:.95rem}
+.stat-l{opacity:1;color:#fff}
+.pr p{font-size:1rem}
+.timeline span{color:var(--texte)}
+.timeline b{font-size:1.3rem}
+.qa summary{font-size:1.1rem}
+.search input{font-size:1rem;border:2px solid #9AA7B2}
+.chip{font-size:.9rem;color:var(--texte);border-style:solid}
+.btn{font-size:1rem}
+.btn-sm{font-size:.9rem}
+.btn-ghost{box-shadow:inset 0 0 0 2px var(--texte);color:var(--texte)}
+/* cartes blanches bien délimitées sur l'aplat */
+.pr,.who-grid li,.ev,.qa,.talk,.sp-talks li,.jc{background:#fff}
+.principles{background:#D9CFC3}
+.talk{border:2px solid var(--bleu-fonce)}
+.who-grid li{border:1px solid #E7DED3;border-top:6px solid var(--orange)}
+.ev{box-shadow:none;border:1px solid #E7DED3}
+.qa{border:1px solid #D9CFC3}
+.logo-chip{border:1px solid #D9CFC3}
+/* « Nous rejoindre » devient claire */
+.join{color:var(--texte)}
+.jc{border:1px solid #E7DED3}
+.jc h3{color:var(--orange-texte)}
+.link-arrow{color:var(--bleu-fonce);text-decoration:underline;text-underline-offset:3px}
+.link-arrow::after{color:var(--orange-texte)}
+.join .wall .logo-chip{border:1px solid #D9CFC3}
+.footer{border-top:2px solid #E7DED3}
+.footer-links a{opacity:1;text-decoration:underline;text-underline-offset:3px}
+.footer-note{opacity:1;color:var(--texte-2)}
+.stripes{display:block!important}
+@media (max-width:600px){html{font-size:106.25%}}
+.nav-li{display:inline-flex;align-items:center;gap:6px;color:#0A66C2!important;font-weight:700}
+.nav-li svg{flex:none}
+
+/* =====================================================================
+   v3 — boutons bleus texte blanc, fond plus clair, motif « cubes » du logo
+   ===================================================================== */
+:root{
+  --fond:#FFFDFA;
+  --bleu-action:#0050C8;  --bleu-action-ombre:#003A91;
+  --cube-1:#0062F2; --cube-2:#5B9BFF; --cube-3:#C7DCFF;
+}
+/* boutons : blanc sur bleu (7:1) au lieu de noir sur orange */
+.btn-yellow{background:var(--bleu-action);color:#fff;box-shadow:0 6px 0 var(--bleu-action-ombre)}
+.btn-yellow:hover{box-shadow:0 8px 0 var(--bleu-action-ombre)}
+.btn-sm{box-shadow:0 4px 0 var(--bleu-action-ombre)}
+.btn-ghost{box-shadow:inset 0 0 0 2px var(--bleu-action);color:var(--bleu-action)}
+/* pastilles : blanc sur orange foncé (5,6:1) */
+.kicker,.badge{background:var(--orange-texte);color:#fff}
+.kicker-dot{background:#fff}
+.pr-n{background:var(--bleu-action);color:#fff;border-radius:3px}
+/* cubes : repère de titre de section */
+.eyebrow::before{width:12px;height:12px;border-radius:2px;background:var(--cube-1);box-shadow:16px -6px 0 -3px var(--cube-2),26px 4px 0 -4px var(--cube-3);margin-right:18px}
+.eyebrow.light::before{background:var(--cube-1)}
+/* cubes : grappes décoratives dans le hero */
+.stripes{width:220px;height:200px;top:24px;right:clamp(16px,4vw,40px);
+  background-image:linear-gradient(var(--cube-1),var(--cube-1)),linear-gradient(var(--cube-1),var(--cube-1)),linear-gradient(var(--cube-2),var(--cube-2)),linear-gradient(var(--cube-2),var(--cube-2)),linear-gradient(var(--cube-3),var(--cube-3)),linear-gradient(var(--cube-3),var(--cube-3)),linear-gradient(var(--cube-1),var(--cube-1));
+  background-size:44px 44px,26px 26px,30px 30px,16px 16px,22px 22px,14px 14px,12px 12px;
+  background-position:170px 0,128px 54px,190px 70px,100px 18px,150px 120px,206px 140px,84px 96px;background-repeat:no-repeat}
+.hero{position:relative}
+.hero-inner::after{content:"";position:absolute;left:-60px;bottom:-40px;width:90px;height:70px;pointer-events:none;
+  background-image:linear-gradient(var(--cube-3),var(--cube-3)),linear-gradient(var(--cube-2),var(--cube-2)),linear-gradient(var(--cube-1),var(--cube-1));
+  background-size:30px 30px,18px 18px,12px 12px;background-position:0 30px,40px 10px,64px 44px;background-repeat:no-repeat}
+@media (max-width:980px){.stripes{display:block!important;transform:scale(.55);transform-origin:top right;top:8px}.hero-inner::after{display:none}}
+/* cubes : coins des cartes */
+.talk,.who-grid li,.jc,.sp-talks li{position:relative}
+.talk::after,.who-grid li::after,.jc::after{content:"";position:absolute;top:-7px;right:18px;width:14px;height:14px;border-radius:2px;background:var(--cube-1);box-shadow:-20px 4px 0 -4px var(--cube-2)}
+.who-grid li{border-top:1px solid #E7DED3}
+/* cubes : frise du déroulé */
+.timeline::before{background:repeating-linear-gradient(90deg,var(--cube-3) 0 10px,transparent 10px 18px);height:6px;top:15px}
+.timeline li::before{border-radius:4px;background:var(--cube-1);border:4px solid #fff;box-shadow:0 0 0 2px var(--cube-1)}
+/* cubes : divers */
+.chip{border:2px solid var(--cube-1);border-radius:6px;color:var(--texte)}
+.qa summary::after{content:"+";color:#fff;background:var(--cube-1);width:28px;height:28px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:22px;top:14px}
+.ev-talks li{border-left-color:var(--cube-1)}
+.ev-link,.ev-talks a.sup{border-bottom-color:var(--cube-2)}
+.link-arrow::after{color:var(--cube-1)}
+a.logo-chip:hover{box-shadow:0 0 0 3px var(--cube-1)}
+.stats{border-top:6px solid var(--cube-1)}
+.jc h3{color:var(--texte)}
+
+/* =====================================================================
+   v4 — sobriété : moins d'effets, pas de cubes dans les blocs
+   (les cubes ne restent qu'en en-tête, en écho au logo)
+   ===================================================================== */
+:root{--radius:8px}
+/* boutons plats, coins modestes */
+.btn{border-radius:6px;box-shadow:none!important;padding:14px 22px}
+.btn:hover{transform:none;filter:brightness(1.12)}
+.btn-ghost{box-shadow:inset 0 0 0 2px var(--bleu-action)!important}
+/* sur-titres : texte simple, sans pictogramme ni capitales espacées */
+.eyebrow{text-transform:none;letter-spacing:0;font-family:var(--body);font-weight:700;font-size:1rem;color:var(--orange-texte)}
+.eyebrow::before,.eyebrow.light::before{display:none}
+/* bandeau « prochain RDV » : simple ligne de texte */
+.kicker{background:none;color:var(--orange-texte);padding:0;text-transform:none;letter-spacing:0;font-family:var(--body);font-size:1rem}
+.kicker-dot{display:none}
+.badge{border-radius:4px}
+/* plus de cubes dans les blocs */
+.talk::after,.who-grid li::after,.jc::after{display:none!important}
+.hero-inner::after{display:none!important}
+.pr-n{display:none}
+/* cartes : fines bordures, sans effet */
+.talk{border:1px solid #CBD5DD}
+.who-grid li{border:1px solid #E7DED3;padding:22px}
+.principles{background:none;gap:0;border-top:1px solid #E7DED3;border-radius:0}
+.pr{background:none;padding:26px 26px 26px 0;border-bottom:1px solid #E7DED3}
+.pr:hover{background:none}
+.pr h3{font-size:1.35rem}
+/* chiffres : une ligne sobre, plus de bloc sombre flottant */
+.stats{background:none;color:var(--texte);margin:0 auto;border-top:1px solid #E7DED3;border-bottom:1px solid #E7DED3;border-radius:0;box-shadow:none}
+.stat{border-right:1px solid #E7DED3;padding:26px 24px}
+.stat-n{color:var(--texte)}
+.stat-l{color:var(--texte-2)}
+/* déroulé : ligne fine et repères discrets */
+.timeline::before{height:2px;top:9px;background:#CBD5DD}
+.timeline li{padding-top:34px}
+.timeline li::before{width:14px;height:14px;top:3px;border-radius:50%;background:var(--bleu-action);border:0;box-shadow:none}
+.timeline b{font-size:1.15rem}
+/* FAQ : simple signe + */
+.qa summary::after{background:none;color:var(--bleu-action);width:auto;height:auto;top:14px;font-size:26px}
+/* puces et liens */
+.chip{border:1px solid #CBD5DD;border-radius:4px}
+.ev-talks li{border-left:3px solid #CBD5DD}
+.sp-talks li{border-left:3px solid #CBD5DD}
+.ev-link,.ev-talks a.sup{border-bottom:none;text-decoration:underline;text-underline-offset:3px}
+.link-arrow::after{content:""}
+.jc{border-radius:var(--radius)}
+.logo-chip{border-radius:6px}
+a.logo-chip:hover{box-shadow:0 0 0 2px var(--bleu-action)}
+/* grappe de cubes de l'en-tête : plus discrète */
+.stripes{opacity:.9;transform:scale(.75);transform-origin:top right}
+.sponsor-slot .lbl{text-transform:none;letter-spacing:0;font-family:var(--body);font-size:1rem;font-weight:700;color:var(--texte-2)}

@@ -53,4 +53,22 @@
   if (q) q.addEventListener("input", apply);
   if (more) more.addEventListener("click", function () { all = true; apply(); });
   apply();
+
+  // Mesure d'audience (GoatCounter, sans cookie) : clics sur les liens sortants et boutons clés
+  function track(name, title) {
+    try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: name, title: title || name, event: true }); } catch (e) {}
+  }
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest("a[href], button");
+    if (!a) return;
+    var zone = (a.closest("section[id], header, footer, nav") || {}).id || (a.closest("footer") ? "pied" : a.closest("header") ? "entete" : "page");
+    var label = (a.getAttribute("aria-label") || a.textContent || "").replace(/\s+/g, " ").trim().slice(0, 60) || (a.querySelector("img") || {}).alt || "";
+    if (a.tagName === "BUTTON") { if (a.id === "btn-ics") track("clic-agenda-ics", "Ajouter à mon agenda"); return; }
+    var href = a.getAttribute("href") || "";
+    var kind = /^mailto:/.test(href) ? "email" : /docs\.google\.com\/forms/.test(href) ? "inscription" : /linkedin\.com/.test(href) ? "linkedin"
+      : /^https?:/.test(href) && a.host !== location.host ? "sortant" : /soirees\//.test(href) ? "page-soiree" : "";
+    if (!kind) return;
+    var dest = kind === "sortant" ? a.host.replace(/^www\./, "") : "";
+    track("clic-" + kind + (dest ? "-" + dest : ""), zone + " › " + label);
+  });
 })();
