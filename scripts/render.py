@@ -260,6 +260,15 @@ def soiree_page(e, data, base, prev_e, next_e, tpl):
 
 # ---------- point d'entrée ----------
 
+def bust(html, root, prefix=""):
+    """Ajoute ?v=<empreinte> aux liens style.css / app.js pour forcer le rechargement après chaque modification."""
+    import hashlib
+    for f in ("style.css", "app.js"):
+        h = hashlib.sha1(open(os.path.join(root, f), "rb").read()).hexdigest()[:8]
+        html = re.sub(r'(["\'])' + re.escape(prefix + f) + r'(\?v=[0-9a-f]+)?(["\'])', r"\g<1>" + prefix + f + "?v=" + h + r"\g<3>", html)
+    return html
+
+
 def render_all(data, root):
     cfg = json.load(open(os.path.join(root, "site.json"), encoding="utf-8"))
     base = cfg["baseUrl"].rstrip("/")
@@ -288,7 +297,11 @@ def render_all(data, root):
     out = tpl_index
     for k, v in blocks.items():
         out = out.replace(f"<!--@{k}-->", v)
-    open(os.path.join(root, "index.html"), "w", encoding="utf-8").write(out)
+    open(os.path.join(root, "index.html"), "w", encoding="utf-8").write(bust(out, root))
+    ml = os.path.join(root, "mentions-legales.html")
+    if os.path.exists(ml):
+        txt = bust(open(ml, encoding="utf-8").read(), root)
+        open(ml, "w", encoding="utf-8").write(txt)
 
     # pages des soirées (chronologique pour la navigation précédent/suivant)
     chrono = list(reversed(data["historique"])) + ([n] if n else [])
@@ -296,7 +309,7 @@ def render_all(data, root):
     keep = set()
     for i, e in enumerate(chrono):
         page = soiree_page(e, data, base, chrono[i - 1] if i > 0 else None, chrono[i + 1] if i + 1 < len(chrono) else None, tpl_soiree)
-        open(os.path.join(root, slug(e)), "w", encoding="utf-8").write(page)
+        open(os.path.join(root, slug(e)), "w", encoding="utf-8").write(bust(page, root, "../"))
         keep.add(os.path.basename(slug(e)))
     for f in os.listdir(os.path.join(root, "soirees")):  # soirée supprimée ou déplacée
         if f.endswith(".html") and f not in keep:
