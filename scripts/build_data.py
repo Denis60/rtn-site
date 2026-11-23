@@ -10,7 +10,7 @@ Le workflow n8n « RTN - Données site web » renvoie les enregistrements bruts
 personne - entreprise et Lieux. Ce script les met en forme pour le site,
 télécharge les photos de synthèse (les liens Airtable expirent) et écrit data.json.
 """
-import argparse, json, os, re, sys, urllib.request
+import argparse, hashlib, json, os, re, sys, urllib.request
 from datetime import datetime, date
 from zoneinfo import ZoneInfo
 
@@ -21,6 +21,7 @@ S_DATE, S_LIEU, S_VILLE, S_SPONSOR = "fldAOkD91jmf1p5ep", "flddbdO1yxEPYIxw7", "
 S_INTERV, S_ODJ, S_NB, S_PHOTO, S_RECAP = "fldCls5weFSPTJaQK", "flddmrPnxHXrSCEsU", "fldzEqW76gkJE5y5m", "fldd9cC91SF4JMLNS", "fldxWCgOOwO33uTn5"
 I_QUI, I_SUJET, I_STATUT, I_SUPPORT = "fld1urtUxZPZqARNV", "fld7J5SXze89jxhKb", "fldeMfVBwduQFYHLB", "fldpTwVk7nEq8SPoK"
 P_NAME, P_PERSONNE, P_ENTREPRISE, P_LOGO = "fldZU6B96H3TbtgzV", "fldbhpCjzkU7NkCcQ", "fldnaOTbVA3u3n945", "fldIo0DCT3ACGrSAK"
+P_SITE = "fldH6bZqvD6RxQ1RH"
 L_NOM, L_ADRESSE = "fldKAtGXesG09Ysv7", "fldrgfZUrOy3RzuxN"
 
 INSCRIPTION = "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform"
@@ -117,11 +118,17 @@ def main():
         name = entreprise(f.get(P_ENTREPRISE)) or clean(f.get(P_NAME))
         logo = f.get(P_LOGO) or ""
         if logo:
-            ext = ".png"
-            local = f"assets/logos/{pid}{ext}"
+            # nom de fichier lié à l'URL : changer « Logo URL » dans Airtable rafraîchit le logo
+            local = f"assets/logos/{pid}-{hashlib.sha1(logo.encode()).hexdigest()[:8]}.png"
+            legacy = f"assets/logos/{pid}.png"
             if download(logo, os.path.join(ROOT, local)):
                 logo = local
-        return {"nom": name, "logo": logo}
+            elif os.path.exists(os.path.join(ROOT, legacy)):
+                logo = legacy
+        site = (f.get(P_SITE) or "").strip()
+        if site and not site.startswith("http"):
+            site = "https://" + site
+        return {"nom": name, "logo": logo, "site": site}
 
     def talks(ids, upcoming):
         out = []

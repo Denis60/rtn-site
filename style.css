@@ -73,7 +73,9 @@ h3{font-size:20px;font-weight:800}
 .sponsor-slot{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .sponsor-slot .lbl{font-family:var(--head);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.12em;opacity:.8}
 .logo-chip{background:#fff;border-radius:12px;padding:10px 16px;height:64px;display:flex;align-items:center;justify-content:center;min-width:110px}
-.logo-chip img{max-height:44px;max-width:170px;object-fit:contain}
+.logo-chip img{max-height:46px;max-width:170px;object-fit:contain}
+a.logo-chip{text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+a.logo-chip:hover{transform:translateY(-2px);box-shadow:0 0 0 3px var(--jaune)}
 .logo-chip.txt{font-family:var(--head);font-weight:800;color:var(--bordeaux);font-size:16px}
 .hero-place{margin:0;font-size:15px;opacity:.85}
 .hero-place a{color:var(--jaune);text-underline-offset:3px}
@@ -163,7 +165,8 @@ section{padding:clamp(64px,9vw,110px) clamp(16px,4vw,40px)}
 .contact-line a{color:var(--jaune);font-weight:700}
 .sponsor-wall{position:relative;max-width:var(--max);margin:64px auto 0}
 .wall{display:flex;flex-wrap:wrap;gap:12px}
-.wall .logo-chip{height:70px;min-width:130px}
+.wall .logo-chip{height:76px;min-width:130px}
+.wall .logo-chip img{max-height:56px}
 
 /* --- pied --- */
 .footer{background:var(--encre);color:var(--creme);padding:34px clamp(16px,4vw,40px);display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;font-size:14px}

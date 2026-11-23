@@ -18,8 +18,10 @@
     return list.map(function (p) { return "<div><b>" + esc(p.nom) + "</b>" + (p.entreprise ? " <span>· " + esc(p.entreprise) + "</span>" : "") + "</div>"; }).join("");
   }
   function logo(s, cls) {
-    if (s.logo) return '<span class="logo-chip ' + (cls || "") + '" title="' + esc(s.nom) + '"><img src="' + esc(s.logo) + '" alt="' + esc(s.nom) + '" loading="lazy" onerror="this.parentNode.classList.add(\'txt\');this.parentNode.textContent=this.alt"></span>';
-    return '<span class="logo-chip txt ' + (cls || "") + '">' + esc(s.nom) + "</span>";
+    var tag = s.site ? "a" : "span";
+    var attrs = s.site ? ' href="' + esc(s.site) + '" target="_blank" rel="noopener"' : "";
+    if (s.logo) return "<" + tag + attrs + ' class="logo-chip ' + (cls || "") + '" title="' + esc(s.nom) + '"><img src="' + esc(s.logo) + '" alt="' + esc(s.nom) + '" loading="lazy" onerror="this.parentNode.classList.add(\'txt\');this.parentNode.textContent=this.alt"></' + tag + ">";
+    return "<" + tag + attrs + ' class="logo-chip txt ' + (cls || "") + '">' + esc(s.nom) + "</" + tag + ">";
   }
   function maps(addr) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(addr); }
 
