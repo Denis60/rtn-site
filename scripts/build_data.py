@@ -51,6 +51,26 @@ def adresse(raw):
     return ", ".join(lines)
 
 
+def shrink(path):
+    """Réduit logos (max 480x240) et photos (max 1600 px) si Pillow est présent."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    try:
+        im = Image.open(path)
+        box = (480, 240) if "/logos/" in path else (1600, 1600)
+        if im.width <= box[0] and im.height <= box[1] and os.path.getsize(path) < 300_000:
+            return
+        im.thumbnail(box)
+        if path.endswith(".jpg"):
+            im.convert("RGB").save(path, "JPEG", quality=80, optimize=True, progressive=True)
+        else:
+            im.save(path, "PNG", optimize=True)
+    except Exception as e:
+        print(f"  ! réduction impossible {path} ({e})", file=sys.stderr)
+
+
 def download(url, dest):
     if os.path.exists(dest):
         return True
@@ -61,6 +81,7 @@ def download(url, dest):
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         with open(dest, "wb") as f:
             f.write(data)
+        shrink(dest)
         return True
     except Exception as e:  # réseau indisponible : on garde ce qu'on a
         print(f"  ! téléchargement impossible {url[:60]}… ({e})", file=sys.stderr)
