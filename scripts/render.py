@@ -83,7 +83,7 @@ def event_jsonld(e, base, inscription, upcoming):
     j = {
         "@context": "https://schema.org", "@type": "Event",
         "name": f"RDV en terrain numérique — {long_date(e['date'])}",
-        "description": "Rencontre des professionnels du numérique de Charente : 3 retours d'expérience de 15-20 minutes, questions-réponses, cocktail."
+        "description": "Rencontre de la transformation digitale et IA de terrain en Charente : 3 retours d'expérience de 15-20 minutes, questions-réponses, cocktail."
                        + (" Au programme : " + " ; ".join(t["sujet"] for t in e["interventions"]) + "." if e["interventions"] else ""),
         "startDate": iso_dt(e["date"], 18, 30), "endDate": iso_dt(e["date"], 21, 0),
         "eventStatus": "https://schema.org/EventScheduled",
@@ -218,7 +218,7 @@ def soiree_page(e, data, base, prev_e, next_e, tpl):
     subjects = [t["sujet"] for t in e["interventions"]]
     upcoming = e["aVenir"]
     title = f"RDV en terrain numérique du {x.day} {MOIS[x.month - 1]} {x.year}" + (f" — {lieu}" if lieu else "") + (f", {e['ville']}" if e["ville"] and e["ville"] not in lieu else "")
-    desc = (("Prochaine soirée" if upcoming else "Soirée") + f" des pros du numérique en Charente, {short_date(e['date'])}"
+    desc = (("Prochaine soirée" if upcoming else "Soirée") + f" de la transformation digitale et IA de terrain en Charente, {short_date(e['date'])}"
             + (f" à {lieu}" if lieu else "") + ". " + ("Au programme : " + " ; ".join(subjects) if subjects else "Programme à venir."))
     desc = desc[:300]
     talks = "".join(
@@ -279,7 +279,7 @@ def render_all(data, root):
     jl = [{
         "@context": "https://schema.org", "@type": "Organization", "name": "RDV en terrain numérique",
         "alternateName": "Rendez-vous en terrain numérique", "url": f"{base}/",
-        "description": "Rencontres des professionnels du numérique de Charente : retours d'expérience, échanges et cocktail.",
+        "description": "Les rencontres de la transformation digitale et IA de terrain, en Charente : retours d'expérience, échanges et cocktail.",
         "areaServed": "Charente", "sameAs": [data["linkedin"]]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}]
