@@ -529,3 +529,6 @@ a.logo-chip:hover{box-shadow:0 0 0 2px var(--bleu-action)}
 /* grappe de cubes de l'en-tête : plus discrète */
 .stripes{opacity:.9;transform:scale(.75);transform-origin:top right}
 .sponsor-slot .lbl{text-transform:none;letter-spacing:0;font-family:var(--body);font-size:1rem;font-weight:700;color:var(--texte-2)}
+/* date du prochain RDV : plus petite, sur une seule ligne */
+.hero-date{font-size:clamp(26px,5.4vw,76px);white-space:nowrap;line-height:1.05}
+@media (max-width:700px){.stripes{display:none!important}}

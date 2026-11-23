@@ -114,7 +114,7 @@ def ld(obj):
 def block_prochain(n, data):
     if not n:
         return ('      <p class="kicker"><span class="kicker-dot"></span> Prochain rendez-vous</p>\n'
-                '      <h1><span class="h1-tag">Les rencontres des pros du numérique en Charente</span>'
+                '      <h1><span class="h1-tag">Les rencontres de la transformation digitale et IA de terrain, en Charente</span>'
                 '<span class="hero-date">Date à venir</span></h1>\n'
                 '      <p class="hero-meta">Le prochain RDV est en préparation. Inscrivez-vous pour être prévenu.</p>')
     x = d(n["date"])
@@ -141,7 +141,7 @@ def block_prochain(n, data):
                           "programme": [t["sujet"] + " (" + ", ".join(p["nom"] for p in t["intervenants"]) + ")" for t in talks]},
                          ensure_ascii=False))
     return f'''      <p class="kicker"><span class="kicker-dot"></span> <span id="kicker" data-date="{n["date"]}">Prochain rendez-vous · édition n°{n["edition"]}</span></p>
-      <h1><span class="h1-tag">Les rencontres des pros du numérique en Charente</span><span class="hero-date">{esc(JOURS[x.weekday()].capitalize())} {x.day} {MOIS[x.month - 1]} <span class="yr">{x.year}</span></span></h1>
+      <h1><span class="h1-tag">Les rencontres de la transformation digitale et IA de terrain, en Charente</span><span class="hero-date">{esc(JOURS[x.weekday()].capitalize())} {x.day} {MOIS[x.month - 1]} <span class="yr">{x.year}</span></span></h1>
       <p class="hero-meta"><b>18h30 – 21h00</b> · {where}<br>Trois retours d'expérience de 15 à 20 minutes, des questions sans filtre, un verre pour continuer. Gratuit, sur inscription.</p>
       <div class="hero-actions">
         <a class="btn btn-yellow" href="{esc(data["inscription"])}" target="_blank" rel="noopener">Je m'inscris — c'est gratuit</a>
