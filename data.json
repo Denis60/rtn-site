@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T09:21+01:00",
+ "generatedAt": "2026-11-23T09:52+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
@@ -20,7 +20,8 @@
   "sponsors": [
    {
     "nom": "CCI Business School",
-    "logo": "assets/logos/recu09JB5bGkubAvt.png"
+    "logo": "assets/logos/recu09JB5bGkubAvt.png",
+    "site": ""
    }
   ],
   "interventions": [
@@ -96,11 +97,13 @@
    "sponsors": [
     {
      "nom": "Aliptic",
-     "logo": "https://lh3.googleusercontent.com/d/1qjgSJI98fgEvGJ8qNRVBv0sklQKZO9L4=w400"
+     "logo": "https://lh3.googleusercontent.com/d/1qjgSJI98fgEvGJ8qNRVBv0sklQKZO9L4=w400",
+     "site": ""
     },
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recIgMtlDpwq2EyD8.png"
+     "logo": "assets/logos/recIgMtlDpwq2EyD8-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -146,15 +149,18 @@
    "sponsors": [
     {
      "nom": "CPME",
-     "logo": "assets/logos/recSfmjkCmcuephrn.png"
+     "logo": "assets/logos/recSfmjkCmcuephrn.png",
+     "site": ""
     },
     {
      "nom": "Manacosi",
-     "logo": "assets/logos/recVfyjjHgdzqrLMO.png"
+     "logo": "assets/logos/recVfyjjHgdzqrLMO.png",
+     "site": ""
     },
     {
      "nom": "PaksIA",
-     "logo": "assets/logos/recy3EMJvrOjHTWDP.png"
+     "logo": "assets/logos/recy3EMJvrOjHTWDP.png",
+     "site": ""
     }
    ],
    "interventions": [
@@ -234,7 +240,8 @@
    "sponsors": [
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+     "logo": "assets/logos/recDWd8dfhV9uEUXE-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -287,7 +294,8 @@
    "sponsors": [
     {
      "nom": "Mediaschool",
-     "logo": ""
+     "logo": "",
+     "site": ""
     }
    ],
    "interventions": [
@@ -340,11 +348,13 @@
    "sponsors": [
     {
      "nom": "Webperfect",
-     "logo": ""
+     "logo": "",
+     "site": ""
     },
     {
      "nom": "Sooiz",
-     "logo": ""
+     "logo": "",
+     "site": ""
     }
    ],
    "interventions": [
@@ -397,7 +407,8 @@
    "sponsors": [
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+     "logo": "assets/logos/recDWd8dfhV9uEUXE-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -461,7 +472,8 @@
    "sponsors": [
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+     "logo": "assets/logos/recDWd8dfhV9uEUXE-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -514,7 +526,8 @@
    "sponsors": [
     {
      "nom": "Manacosi",
-     "logo": "assets/logos/recnEjEWqDbhYSdvu.png"
+     "logo": "assets/logos/recnEjEWqDbhYSdvu.png",
+     "site": ""
     }
    ],
    "interventions": [
@@ -578,7 +591,8 @@
    "sponsors": [
     {
      "nom": "Sooiz",
-     "logo": ""
+     "logo": "",
+     "site": ""
     }
    ],
    "interventions": [
@@ -631,7 +645,8 @@
    "sponsors": [
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+     "logo": "assets/logos/recDWd8dfhV9uEUXE-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -684,7 +699,8 @@
    "sponsors": [
     {
      "nom": "Memorandum AI",
-     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+     "logo": "assets/logos/recDWd8dfhV9uEUXE-41556050.png",
+     "site": "https://www.memorandum-ai.com"
     }
    ],
    "interventions": [
@@ -811,7 +827,8 @@
    "sponsors": [
     {
      "nom": "syst-a.org",
-     "logo": ""
+     "logo": "",
+     "site": ""
     }
    ],
    "interventions": [
