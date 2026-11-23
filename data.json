@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T09:55+01:00",
+ "generatedAt": "2026-11-23T09:57+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
@@ -20,7 +20,7 @@
   "sponsors": [
    {
     "nom": "CCI Business School",
-    "logo": "assets/logos/recu09JB5bGkubAvt.png",
+    "logo": "assets/logos/recu09JB5bGkubAvt-1bbb1139.png",
     "site": ""
    }
   ],
@@ -96,11 +96,6 @@
    "ville": "Angoulême",
    "sponsors": [
     {
-     "nom": "Aliptic",
-     "logo": "https://lh3.googleusercontent.com/d/1qjgSJI98fgEvGJ8qNRVBv0sklQKZO9L4=w400",
-     "site": ""
-    },
-    {
      "nom": "Memorandum AI",
      "logo": "assets/logos/recIgMtlDpwq2EyD8-41556050.png",
      "site": "https://www.memorandum-ai.com"
@@ -149,17 +144,17 @@
    "sponsors": [
     {
      "nom": "CPME",
-     "logo": "assets/logos/recSfmjkCmcuephrn.png",
+     "logo": "assets/logos/recSfmjkCmcuephrn-58fcaf52.png",
      "site": ""
     },
     {
      "nom": "Manacosi",
-     "logo": "assets/logos/recVfyjjHgdzqrLMO.png",
+     "logo": "assets/logos/recVfyjjHgdzqrLMO-c35a08a6.png",
      "site": "https://manacosi.com/"
     },
     {
      "nom": "PaksIA",
-     "logo": "assets/logos/recy3EMJvrOjHTWDP.png",
+     "logo": "assets/logos/recy3EMJvrOjHTWDP-b4374637.png",
      "site": "https://www.paksia.ai/"
     }
    ],
@@ -526,7 +521,7 @@
    "sponsors": [
     {
      "nom": "Manacosi",
-     "logo": "assets/logos/recnEjEWqDbhYSdvu.png",
+     "logo": "assets/logos/recnEjEWqDbhYSdvu-c35a08a6.png",
      "site": "https://manacosi.com/"
     }
    ],
