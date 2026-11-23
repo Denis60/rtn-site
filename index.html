@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RDV en terrain numérique — les soirées des pros du numérique en Charente</title>
+<meta name="description" content="Des soirées physiques, gratuites, pour partager des retours d'expérience du numérique en Charente : 3 présentations courtes, des échanges, un cocktail.">
+<meta property="og:title" content="RDV en terrain numérique — Charente">
+<meta property="og:description" content="3 retours d'expérience de 15-20 min, des questions, un cocktail. Gratuit, sur inscription.">
+<meta property="og:image" content="assets/ambiance/salle-1.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238A2D36'/%3E%3Cpath d='M10 44 L54 20' stroke='%23FFD640' stroke-width='6'/%3E%3Cpath d='M10 54 L54 30' stroke='%23FFD640' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Accueil">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">RDV en terrain <b>numérique</b></span>
+  </a>
+  <nav class="nav">
+    <a href="#prochain">Prochain RDV</a>
+    <a href="#concept">Le principe</a>
+    <a href="#historique">Historique</a>
+    <a href="#rejoindre">Nous rejoindre</a>
+  </nav>
+  <a class="btn btn-yellow btn-sm js-inscription" href="#" target="_blank" rel="noopener">S'inscrire</a>
+</header>
+
+<main id="top">
+
+  <!-- PROCHAIN RENDEZ-VOUS -->
+  <section class="hero" id="prochain">
+    <div class="hero-inner">
+      <p class="kicker"><span class="kicker-dot"></span> <span id="kicker">Prochain rendez-vous</span></p>
+      <h1 class="hero-date" id="hero-date">Bientôt</h1>
+      <p class="hero-meta" id="hero-meta"></p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow js-inscription" href="#" target="_blank" rel="noopener">Je m'inscris — c'est gratuit</a>
+        <button class="btn btn-ghost" id="btn-ics" type="button">Ajouter à mon agenda</button>
+      </div>
+
+      <div class="programme" id="programme"></div>
+
+      <div class="hero-foot">
+        <div class="sponsor-slot" id="hero-sponsors"></div>
+        <p class="hero-place" id="hero-place"></p>
+      </div>
+    </div>
+    <div class="stripes" aria-hidden="true"></div>
+  </section>
+
+  <!-- CHIFFRES -->
+  <section class="stats" aria-label="En chiffres">
+    <div class="stat"><span class="stat-n" id="st-soirees">–</span><span class="stat-l">soirées depuis <span id="st-depuis"></span></span></div>
+    <div class="stat"><span class="stat-n" id="st-pres">–</span><span class="stat-l">retours d'expérience partagés</span></div>
+    <div class="stat"><span class="stat-n" id="st-int">–</span><span class="stat-l">intervenants</span></div>
+    <div class="stat"><span class="stat-n">30–50</span><span class="stat-l">participants par soirée</span></div>
+  </section>
+
+  <!-- LE PRINCIPE -->
+  <section class="concept" id="concept">
+    <div class="section-head">
+      <p class="eyebrow">Le principe</p>
+      <h2>Du numérique vécu,<br>raconté par ceux qui le font.</h2>
+      <p class="lead">Les RDV en terrain numérique réunissent les professionnels du numérique de Charente, en vrai, autour de retours d'expérience concrets. Pas de conférence magistrale, pas de webinaire : on vient, on écoute, on questionne, on trinque.</p>
+    </div>
+
+    <div class="principles">
+      <article class="pr"><span class="pr-n">01</span><h3>En vrai</h3><p>Des rencontres physiques. Jamais de webinaire : l'échange se passe dans la salle, et après.</p></article>
+      <article class="pr"><span class="pr-n">02</span><h3>Du terrain</h3><p>Des retours d'expérience : ce qui a marché, ce qui a coincé, ce qu'on referait autrement.</p></article>
+      <article class="pr"><span class="pr-n">03</span><h3>Court</h3><p>15 à 20 minutes par présentation, pas plus. L'essentiel, sans slides interminables.</p></article>
+      <article class="pr"><span class="pr-n">04</span><h3>Participatif</h3><p>Questions-réponses après chaque intervention, puis un cocktail simple pour prolonger.</p></article>
+      <article class="pr"><span class="pr-n">05</span><h3>Varié</h3><p>3 sujets par soirée, sans thème imposé : IA, cyber, design, open data, outils, métiers…</p></article>
+      <article class="pr"><span class="pr-n">06</span><h3>Itinérant</h3><p>Un lieu différent à chaque fois, surtout à Angoulême, et ailleurs en Charente au gré des occasions.</p></article>
+    </div>
+
+    <div class="mosaic" aria-label="Photos de soirées">
+      <figure class="m1"><img src="assets/ambiance/presentation.jpg" alt="Une présentation devant une trentaine de participants" loading="lazy"></figure>
+      <figure class="m2"><img src="assets/ambiance/salle-1.jpg" alt="Le public pose des questions" loading="lazy"></figure>
+      <figure class="m3"><img src="assets/ambiance/cocktail.jpg" alt="Échanges pendant le cocktail" loading="lazy"></figure>
+      <figure class="m4"><img src="assets/ambiance/saynete.jpg" alt="Une saynète sur l'IA et l'entrepreneuriat" loading="lazy"></figure>
+    </div>
+
+    <ol class="timeline" aria-label="Déroulé d'une soirée">
+      <li><b>18h30</b><span>Accueil</span></li>
+      <li><b>×3</b><span>Présentation de 15–20 min<br>+ questions-réponses</span></li>
+      <li><b>Cocktail</b><span>On continue la discussion</span></li>
+      <li><b>21h00</b><span>Fin (officielle)</span></li>
+    </ol>
+  </section>
+
+  <!-- HISTORIQUE -->
+  <section class="history" id="historique">
+    <div class="section-head row">
+      <div>
+        <p class="eyebrow">Historique</p>
+        <h2>Toutes les soirées</h2>
+      </div>
+      <label class="search">
+        <span class="sr">Rechercher</span>
+        <input type="search" id="q" placeholder="Chercher un sujet, un intervenant, un lieu…">
+      </label>
+    </div>
+    <div class="upcoming" id="upcoming"></div>
+    <div class="events" id="events"></div>
+    <p class="empty" id="empty" hidden>Aucune soirée ne correspond à cette recherche.</p>
+  </section>
+
+  <!-- NOUS REJOINDRE -->
+  <section class="join" id="rejoindre">
+    <div class="join-grid">
+      <div>
+        <p class="eyebrow light">Une organisation informelle</p>
+        <h2>Pas d'association, pas de cotisation. Juste l'envie.</h2>
+        <p>Les RDV sont portés par un noyau de bénévoles qui s'étoffe au fil des soirées : <b>Laure Raymond, Frédéric Bourcier, Clément Germon, Denis Oblin et Sonia Bilon</b>. Pas de structure juridique, un fonctionnement autofinancé… et de plus en plus automatisé : invitations, inscriptions, agenda et ce site sont alimentés depuis la même base, sans ressaisie.</p>
+      </div>
+      <div class="join-cards">
+        <article class="jc">
+          <h3>Accueillir ou sponsoriser une soirée</h3>
+          <p>Entreprises, écoles, institutions : vous prêtez une salle et/ou offrez le cocktail, et votre logo accompagne l'invitation et la soirée.</p>
+          <a class="link-arrow js-linkedin" href="#" target="_blank" rel="noopener">Nous contacter</a>
+        </article>
+        <article class="jc">
+          <h3>Proposer une intervention</h3>
+          <p>Vous avez un retour d'expérience à partager en 15–20 minutes ? Réussite, échec instructif, outil, méthode : tout ce qui vient du terrain.</p>
+          <a class="link-arrow js-linkedin" href="#" target="_blank" rel="noopener">Proposer un sujet</a>
+        </article>
+        <article class="jc">
+          <h3>Recevoir les invitations</h3>
+          <p>Inscrivez-vous à une soirée : vous recevrez ensuite les invitations suivantes par e-mail.</p>
+          <a class="link-arrow js-inscription" href="#" target="_blank" rel="noopener">S'inscrire</a>
+        </article>
+      </div>
+    </div>
+    <div class="sponsor-wall">
+      <p class="eyebrow light">Ils ont accueilli ou soutenu une soirée</p>
+      <div class="wall" id="wall"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand"><span class="brand-mark" aria-hidden="true"></span> RDV en terrain numérique · Charente</div>
+  <div class="footer-links">
+    <a class="js-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="js-inscription" href="#" target="_blank" rel="noopener">Inscription</a>
+  </div>
+  <p class="footer-note">Programme mis à jour automatiquement <span id="maj"></span>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

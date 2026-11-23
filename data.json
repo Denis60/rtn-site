@@ -1,0 +1,846 @@
+{
+ "generatedAt": "2026-11-23T09:07+01:00",
+ "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
+ "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
+ "stats": {
+  "soirees": 14,
+  "presentations": 41,
+  "intervenants": 25,
+  "lieux": 6,
+  "depuis": "2024-09-23"
+ },
+ "prochaine": {
+  "edition": 15,
+  "date": "2026-11-26",
+  "aVenir": true,
+  "programmePret": true,
+  "lieu": "CCI business school",
+  "adresse": "135, Boulevard Salvador Allende, 16340 L’ISLE D’ESPAGNAC",
+  "ville": "Angoulême",
+  "sponsors": [
+   {
+    "nom": "CCI Business School",
+    "logo": "assets/logos/recu09JB5bGkubAvt.png"
+   }
+  ],
+  "interventions": [
+   {
+    "sujet": "Portrait de la filière numérique régionale et présentation du dispositif régional de soutien à la formation et à l'emploi pour les entreprises du Numérique",
+    "intervenants": [
+     {
+      "nom": "Raphaël Nieto",
+      "entreprise": "Aliptic"
+     }
+    ],
+    "support": "",
+    "aConfirmer": false
+   },
+   {
+    "sujet": "Affaire conclue : quand l'IA intervient dans les business process",
+    "intervenants": [
+     {
+      "nom": "Johann Vanaerde",
+      "entreprise": ""
+     }
+    ],
+    "support": "",
+    "aConfirmer": false
+   },
+   {
+    "sujet": "Transformation IA sur le terrain : le retour d'expérience du GE16",
+    "intervenants": [
+     {
+      "nom": "Clément Dumas",
+      "entreprise": "GE16"
+     },
+     {
+      "nom": "Cédric Vlieghe",
+      "entreprise": "GE16"
+     }
+    ],
+    "support": "",
+    "aConfirmer": false
+   }
+  ],
+  "participants": null,
+  "photo": "",
+  "recap": ""
+ },
+ "suivantes": [
+  {
+   "date": "2026-12-17",
+   "lieu": ""
+  },
+  {
+   "date": "2027-01-21",
+   "lieu": ""
+  },
+  {
+   "date": "2027-02-17",
+   "lieu": ""
+  },
+  {
+   "date": "2027-03-25",
+   "lieu": ""
+  }
+ ],
+ "historique": [
+  {
+   "edition": 14,
+   "date": "2026-10-22",
+   "aVenir": false,
+   "programmePret": true,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Aliptic",
+     "logo": "https://lh3.googleusercontent.com/d/1qjgSJI98fgEvGJ8qNRVBv0sklQKZO9L4=w400"
+    },
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recIgMtlDpwq2EyD8.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Retour sur le concours d'idées IA de mai - juin 2026 : idées et réalisations",
+     "intervenants": [
+      {
+       "nom": "Mehdi Iaichouchen",
+       "entreprise": "Tismos"
+      },
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Mission de conseil en organisation assistée par l'IA - retour d'expérience",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 13,
+   "date": "2026-09-24",
+   "aVenir": false,
+   "programmePret": true,
+   "lieu": "Passe à la maison",
+   "adresse": "9 Bd du 8 mai 1945 Angouleme",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "CPME",
+     "logo": "assets/logos/recSfmjkCmcuephrn.png"
+    },
+    {
+     "nom": "Manacosi",
+     "logo": "assets/logos/recVfyjjHgdzqrLMO.png"
+    },
+    {
+     "nom": "PaksIA",
+     "logo": "assets/logos/recy3EMJvrOjHTWDP.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Une entrepreneuse, son accompagnatrice et quelques IA très convaincantes : une saynète à quatre voix pour explorer avec humour et esprit critique comment l’intelligence artificielle transforme déjà l’accompagnement entrepreneurial.",
+     "intervenants": [
+      {
+       "nom": "Magaly Garcia",
+       "entreprise": ""
+      },
+      {
+       "nom": "Sonia Bilon",
+       "entreprise": ""
+      },
+      {
+       "nom": "Stéphanie Chapelle",
+       "entreprise": "PaksIA"
+      },
+      {
+       "nom": "Alice Bachar",
+       "entreprise": "Apogée IA"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Prévention numérique - nos actions à Angoulême",
+     "intervenants": [
+      {
+       "nom": "Bernard Couquet",
+       "entreprise": "Police nationale"
+      },
+      {
+       "nom": "Sébastien Mesnier",
+       "entreprise": "LOGELIA / Association Cyber"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Passé l'effet démo, développer avec l'IA sur un projet qui tient dans la durée",
+     "intervenants": [
+      {
+       "nom": "Pier Jean Malendrino",
+       "entreprise": "Scub"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "InfraBasse, référentiel opérationnel pour une désescalade numérique choisie et maîtrisée.",
+     "intervenants": [
+      {
+       "nom": "Oriane Saint-Cyr",
+       "entreprise": "syst-a.org"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 12,
+   "date": "2026-06-18",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "IA, risques, confiance : comment rester dans le jeu avec l’AI Act",
+     "intervenants": [
+      {
+       "nom": "Stéphanie Chapelle",
+       "entreprise": "PaksIA"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "à L'IA, nouveau junior dans l'équipe — comment (tenter de) cadrer ses missions",
+     "intervenants": [
+      {
+       "nom": "Frédéric Bourcier",
+       "entreprise": "Sooiz"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Automatisation de process par l'IA : retour d'expérience / suite !",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 11,
+   "date": "2026-05-21",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Mediaschool",
+     "logo": ""
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "OpenStreetMap, ou comment faire territoire en commun",
+     "intervenants": [
+      {
+       "nom": "Marina Petkova",
+       "entreprise": "Dynartio"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Introduction à la BlockChain et aux crypto actifs (suite : Les Assets)",
+     "intervenants": [
+      {
+       "nom": "Stéphane Traumat",
+       "entreprise": "Scub"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "L'IA n'est pas magique : probabilités, prompts et conversation",
+     "intervenants": [
+      {
+       "nom": "Loïc Velasco",
+       "entreprise": "IAassiste"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 10,
+   "date": "2026-04-23",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Le Chat Noir",
+   "adresse": "24 Rue de Genève, 16000 Angoulême",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Webperfect",
+     "logo": ""
+    },
+    {
+     "nom": "Sooiz",
+     "logo": ""
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Suite : Introduction à la blockchain et aux crypto actifs",
+     "intervenants": [
+      {
+       "nom": "Stéphane Traumat",
+       "entreprise": "Scub"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "L'IA ne transforme pas les entreprises : les humains qui savent s'en servir, oui",
+     "intervenants": [
+      {
+       "nom": "Alice Bachar",
+       "entreprise": "Apogée IA"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Explorer le potentiel de vos idées d'automatisation avec l'IA",
+     "intervenants": [
+      {
+       "nom": "Mehdi Iaichouchen",
+       "entreprise": "Tismos"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 9,
+   "date": "2026-03-19",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Automatisation IA de réponse à appel d'offre matériels : de la réception du cahier des charges à la remise du devis",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Quand la machine nous force à jouer notre plus beau coup.",
+     "intervenants": [
+      {
+       "nom": "Stéphanie Chapelle",
+       "entreprise": "PaksIA"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Automatisation de process par l'IA : un retour d'expérience live",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Présentation de My Moojo et de la French Tech Poitou-Charente",
+     "intervenants": [
+      {
+       "nom": "Sara Reynaud",
+       "entreprise": "My Dojo"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 8,
+   "date": "2026-02-26",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Résidence Montana",
+   "adresse": "18 Rue Leclerc Chauvin, 16000 Angoulême",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Comment générer des podcasts vidéos de qualité pro",
+     "intervenants": [
+      {
+       "nom": "Vincent PERCEVAULT",
+       "entreprise": "G4F"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Comment je développe mon application de Cybersécurité à l'aide de l'Intelligence Artificielle",
+     "intervenants": [
+      {
+       "nom": "Frédéric Bourcier",
+       "entreprise": "Sooiz"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Introduction à la blockchain et aux crypto actifs",
+     "intervenants": [
+      {
+       "nom": "Stéphane Traumat",
+       "entreprise": "Scub"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 7,
+   "date": "2026-01-22",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Manacosi",
+     "logo": "assets/logos/recnEjEWqDbhYSdvu.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Comment gérer des flux de caméra temps réel",
+     "intervenants": [
+      {
+       "nom": "Tom Detiege",
+       "entreprise": "Less code"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Astuces pour performer avec ThanksForLeads®, la nouvelle app qui permet de recevoir plus de recommandations d’affaires.",
+     "intervenants": [
+      {
+       "nom": "Benjamin Ribano",
+       "entreprise": "ThanksForLeads"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "IA au service de votre gestion commerciale",
+     "intervenants": [
+      {
+       "nom": "Jean-Christophe Rousseau",
+       "entreprise": ""
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Repenser la République Numérique et l'Open Data - La position d'OpenStreetMap France",
+     "intervenants": [
+      {
+       "nom": "Benoit Ribon",
+       "entreprise": "Dynartio"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 6,
+   "date": "2025-11-13",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Krysalide",
+   "adresse": "Parc d'activités, 70 Rue Jean Doucet, 16470 Saint-Michel",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Sooiz",
+     "logo": ""
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Cybersécurité et NIS2 (synthèse de la menace avec les retours du Campus Cyber NA)",
+     "intervenants": [
+      {
+       "nom": "Frédéric Bourcier",
+       "entreprise": "Sooiz"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Démonstration d'automatisation de process no code avec l'IA (début d'une longue série !)",
+     "intervenants": [
+      {
+       "nom": "Mehdi Iaichouchen",
+       "entreprise": "Tismos"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "292 jours avant La Facture Electronique",
+     "intervenants": [
+      {
+       "nom": "Fabrice Vergereau",
+       "entreprise": "Koesio"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 5,
+   "date": "2025-10-09",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Résidence Montana",
+   "adresse": "18 Rue Leclerc Chauvin, 16000 Angoulême",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Créer un observatoire pour faire parler (de) nos territoire",
+     "intervenants": [
+      {
+       "nom": "Benoit Ribon",
+       "entreprise": "Dynartio"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Les points clés pour réussir la création ou la refonte de votre site internet",
+     "intervenants": [
+      {
+       "nom": "Joel Hayes",
+       "entreprise": "Webperfect"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "le contenu dans le design",
+     "intervenants": [
+      {
+       "nom": "Florent Chauny",
+       "entreprise": ""
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 4,
+   "date": "2025-04-03",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "CESI",
+   "adresse": "4 Rue Camille Claudel, 16400 La Couronne",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "Memorandum AI",
+     "logo": "assets/logos/recDWd8dfhV9uEUXE.png"
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "SI RH",
+     "intervenants": [
+      {
+       "nom": "Laure Raymond",
+       "entreprise": "Manacosi"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "UX / simplification des interfaces : le cas Blablacar",
+     "intervenants": [
+      {
+       "nom": "Florent Chauny",
+       "entreprise": ""
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "les outils immersifs pour l'apprentissage",
+     "intervenants": [
+      {
+       "nom": "Tristan Gassies",
+       "entreprise": "Goupil"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 3,
+   "date": "2025-02-20",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Le Chat Noir",
+   "adresse": "24 Rue de Genève, 16000 Angoulême",
+   "ville": "Angoulême",
+   "sponsors": [],
+   "interventions": [
+    {
+     "sujet": "Son produit",
+     "intervenants": [
+      {
+       "nom": "Tom Detiege",
+       "entreprise": "Less code"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Open Source",
+     "intervenants": [
+      {
+       "nom": "Tristan Gassies",
+       "entreprise": "Goupil"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 2,
+   "date": "2024-11-20",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Ibis Chateaubernard",
+   "adresse": "84 Avenue d'Angoulême, 16100 CHATEAUBERNARD",
+   "ville": "Cognac",
+   "sponsors": [],
+   "interventions": [
+    {
+     "sujet": "Son produit",
+     "intervenants": [
+      {
+       "nom": "Tom Detiege",
+       "entreprise": "Less code"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "IA",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
+  {
+   "edition": 1,
+   "date": "2024-09-23",
+   "aVenir": false,
+   "programmePret": false,
+   "lieu": "Le Chat Noir",
+   "adresse": "24 Rue de Genève, 16000 Angoulême",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "syst-a.org",
+     "logo": ""
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Cybersécurité",
+     "intervenants": [
+      {
+       "nom": "Frédéric Bourcier",
+       "entreprise": "Sooiz"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "IA",
+     "intervenants": [
+      {
+       "nom": "Denis Oblin",
+       "entreprise": "Memorandum AI"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  }
+ ]
+}

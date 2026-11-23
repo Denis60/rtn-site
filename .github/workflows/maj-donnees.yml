@@ -1,0 +1,34 @@
+name: Mise à jour des données (Airtable → data.json)
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # chaque jour vers 6h-7h (heure de Paris)
+  workflow_dispatch:        # bouton « Run workflow » pour forcer une mise à jour
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maj-donnees
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Construire data.json depuis n8n / Airtable
+        env:
+          RTN_DATA_URL: ${{ secrets.RTN_DATA_URL }}
+        run: python scripts/build_data.py --url "$RTN_DATA_URL"
+      - name: Publier si changement
+        run: |
+          git config user.name "rtn-bot"
+          git config user.email "rtn-bot@users.noreply.github.com"
+          git add data.json assets/photos assets/logos 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Aucun changement"; exit 0; fi
+          git commit -m "Mise à jour automatique des données ($(date +'%Y-%m-%d'))"
+          git push
