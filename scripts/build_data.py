@@ -78,6 +78,9 @@ def download(url, dest):
         req = urllib.request.Request(url, headers={"User-Agent": "rtn-site-build"})
         with urllib.request.urlopen(req, timeout=30) as r:
             data = r.read()
+        if not (data[:8].startswith(b"\x89PNG") or data[:3] == b"\xff\xd8\xff" or data[:4] in (b"GIF8", b"RIFF") or b"<svg" in data[:300]):
+            print(f"  ! pas une image (lien non public ?) : {url[:70]}", file=sys.stderr)
+            return False
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         with open(dest, "wb") as f:
             f.write(data)
