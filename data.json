@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T09:07+01:00",
+ "generatedAt": "2026-11-23T09:21+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
@@ -96,7 +96,7 @@
    "sponsors": [
     {
      "nom": "Aliptic",
-     "logo": "https://lh3.googleusercontent.com/d/1qjgSJI98fgEvGJ8qNRVBv0sklQKZO9L4=w400"
+     "logo": "assets/logos/recy48Oj6ZwcGxMpa.png"
     },
     {
      "nom": "Memorandum AI",
@@ -132,7 +132,7 @@
     }
    ],
    "participants": null,
-   "photo": "",
+   "photo": "assets/photos/soiree-2026-10-22.jpg",
    "recap": ""
   },
   {
@@ -220,7 +220,7 @@
     }
    ],
    "participants": null,
-   "photo": "",
+   "photo": "assets/photos/soiree-2026-09-24.jpg",
    "recap": ""
   },
   {
