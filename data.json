@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T16:11+01:00",
+ "generatedAt": "2026-11-27T17:57+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
@@ -13,7 +13,7 @@
   "edition": 16,
   "date": "2026-12-17",
   "aVenir": true,
-  "programmePret": false,
+  "programmePret": true,
   "lieu": "CCI business school",
   "adresse": "135, Boulevard Salvador Allende, 16340 L’ISLE D’ESPAGNAC",
   "ville": "Angoulême",
@@ -26,7 +26,7 @@
   ],
   "interventions": [
    {
-    "sujet": "Comment exploiter la puissance de l'intelligence artificielle tout en conservant la maîtrise de ses données, de ses processus et de ses décisions ?",
+    "sujet": "IA en entreprise : moins de promesses, plus de résultats.",
     "intervenants": [
      {
       "nom": "Davy Foulatier",
@@ -34,7 +34,7 @@
      }
     ],
     "support": "",
-    "aConfirmer": true
+    "aConfirmer": false
    },
    {
     "sujet": "Moi, Son.IA. Augmentée malgré moi",
