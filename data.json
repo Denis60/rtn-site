@@ -1,46 +1,46 @@
 {
- "generatedAt": "2026-11-26T16:23+01:00",
+ "generatedAt": "2026-11-27T16:11+01:00",
  "inscription": "https://docs.google.com/forms/d/e/1FAIpQLSdoK-db3MX8OSTDcKy6phXWfcXxs46Ox_xmTnMmXpevObmzaQ/viewform",
  "linkedin": "https://www.linkedin.com/company/rdv-en-terrain-num%C3%A9rique-charente/",
  "stats": {
-  "soirees": 14,
-  "presentations": 41,
-  "intervenants": 25,
-  "lieux": 6,
+  "soirees": 15,
+  "presentations": 44,
+  "intervenants": 29,
+  "lieux": 7,
   "depuis": "2024-09-23"
  },
  "prochaine": {
-  "edition": 15,
-  "date": "2026-11-26",
+  "edition": 16,
+  "date": "2026-12-17",
   "aVenir": true,
-  "programmePret": true,
+  "programmePret": false,
   "lieu": "CCI business school",
   "adresse": "135, Boulevard Salvador Allende, 16340 L’ISLE D’ESPAGNAC",
   "ville": "Angoulême",
   "sponsors": [
    {
-    "nom": "CCI Business School",
-    "logo": "assets/logos/recu09JB5bGkubAvt-1bbb1139.png",
+    "nom": "CESI",
+    "logo": "",
     "site": ""
    }
   ],
   "interventions": [
    {
-    "sujet": "Portrait de la filière numérique régionale et présentation du dispositif régional de soutien à la formation et à l'emploi pour les entreprises du Numérique",
+    "sujet": "Comment exploiter la puissance de l'intelligence artificielle tout en conservant la maîtrise de ses données, de ses processus et de ses décisions ?",
     "intervenants": [
      {
-      "nom": "Raphaël Nieto",
-      "entreprise": "Aliptic"
+      "nom": "Davy Foulatier",
+      "entreprise": "Korum"
      }
     ],
     "support": "",
-    "aConfirmer": false
+    "aConfirmer": true
    },
    {
-    "sujet": "Affaire conclue : quand l'IA intervient dans les business process",
+    "sujet": "Moi, Son.IA. Augmentée malgré moi",
     "intervenants": [
      {
-      "nom": "Johann Vanaerde",
+      "nom": "Sonia Bilon",
       "entreprise": ""
      }
     ],
@@ -48,15 +48,11 @@
     "aConfirmer": false
    },
    {
-    "sujet": "Transformation IA sur le terrain : le retour d'expérience du GE16",
+    "sujet": "De la photo argentique à la photo agentique",
     "intervenants": [
      {
-      "nom": "Clément Dumas",
-      "entreprise": "GE16"
-     },
-     {
-      "nom": "Cédric Vlieghe",
-      "entreprise": "GE16"
+      "nom": "Philippe Metifet",
+      "entreprise": "Photographe"
      }
     ],
     "support": "",
@@ -68,10 +64,6 @@
   "recap": ""
  },
  "suivantes": [
-  {
-   "date": "2026-12-17",
-   "lieu": ""
-  },
   {
    "date": "2027-01-21",
    "lieu": ""
@@ -86,6 +78,64 @@
   }
  ],
  "historique": [
+  {
+   "edition": 15,
+   "date": "2026-11-26",
+   "aVenir": false,
+   "programmePret": true,
+   "lieu": "CCI business school",
+   "adresse": "135, Boulevard Salvador Allende, 16340 L’ISLE D’ESPAGNAC",
+   "ville": "Angoulême",
+   "sponsors": [
+    {
+     "nom": "CCI Business School",
+     "logo": "assets/logos/recu09JB5bGkubAvt-1bbb1139.png",
+     "site": ""
+    }
+   ],
+   "interventions": [
+    {
+     "sujet": "Portrait de la filière numérique régionale et présentation du dispositif régional de soutien à la formation et à l'emploi pour les entreprises du Numérique",
+     "intervenants": [
+      {
+       "nom": "Raphaël Nieto",
+       "entreprise": "Aliptic"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Affaire conclue : quand l'IA intervient dans les business process",
+     "intervenants": [
+      {
+       "nom": "Johann Vanaerde",
+       "entreprise": ""
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    },
+    {
+     "sujet": "Transformation IA sur le terrain : le retour d'expérience du GE16",
+     "intervenants": [
+      {
+       "nom": "Clément Dumas",
+       "entreprise": "GE16"
+      },
+      {
+       "nom": "Cédric Vlieghe",
+       "entreprise": "GE16"
+      }
+     ],
+     "support": "",
+     "aConfirmer": false
+    }
+   ],
+   "participants": null,
+   "photo": "",
+   "recap": ""
+  },
   {
    "edition": 14,
    "date": "2026-10-22",
